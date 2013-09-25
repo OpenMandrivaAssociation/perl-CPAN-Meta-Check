@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta-Check
-%define upstream_version 0.004
+%define upstream_version 0.007
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,9 +9,10 @@ Summary:	Verify requirements in a CPAN::Meta object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/CPAN-Meta-Check-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Deep)
 BuildRequires:	perl(CPAN::Meta) >= 2.120.920
 BuildRequires:	perl(CPAN::Meta::Requirements) >= 2.120.920
 BuildRequires:	perl(Exporter) >= 5.570.0
@@ -46,4 +47,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes INSTALL LICENSE META.json META.yml MYMETA.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
