@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta-Check
-%define upstream_version 0.007
+%define upstream_version 0.008
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -47,5 +47,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes INSTALL LICENSE META.json META.yml MYMETA.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
 

@@ -1,4 +1,5 @@
 removed_sources:
   CPAN-Meta-Check-0.004.tar.gz: c6eb37b414d45ea38b783b3844e6cc27af7bf88c
-sources:
   CPAN-Meta-Check-0.007.tar.gz: b9b8ba9f76e4c8bac10c456da83c92bf2cc2def4
+sources:
+  CPAN-Meta-Check-0.008.tar.gz: d76ecc141fa9d068e11c019ab0232c87e848c905
